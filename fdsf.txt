@@ -1,0 +1,488 @@
+https://img.freepik.com/free-vector/local-tourism-illustration_23-2148587064.jpg?semt=ais_hybrid&w=740
+potfolio web : "https://i.ibb.co/rJDBvfd/360-F-878179566-d0-Mxu-O92-Nlvo-Fim-B8z-R0zw-XIQk-HIDj-Hd.jpg
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: rgb(221, 208, 210);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.H1 {
+  font-size: 2em;
+}
+
+.P1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.P1 {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.P1 ol {
+  padding-left: 20px;
+  max-width: 60%;
+}
+
+.P1 li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.P1 p {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+footer {
+  background-color:rgb(221, 208, 210);;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .P1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .P1 ol {
+    max-width: 100%;
+  }
+
+  .image {
+    margin-top: 20px;
+  }
+}
+ .certificates {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.certificates li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* PDF link styling */
+a.pdf {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+a.pdf:hover {
+  background-color: #0056b3;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>My Journey</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="H1">Hi, this side Vivek telling about my journey 🚀</h1>
+  </header>
+
+  <!-- Image -->
+  <div class="My">
+    <img class="image"
+      src="https://media.istockphoto.com/id/1371879631/vector/business-journey-businessman-walking-on-long-winding-path-going-to-success-in-the-future.jpg?s=612x612&w=0&k=20&c=VtgGNFpLo8v5lWXW0rWqa21Fh_i5bvLvJ2gA4pCqpR0="
+      alt="Journey Illustration">
+  </div>
+
+  <!-- Journey Section -->
+  <section class="P1">
+    <ol class="timeline">
+      <li>
+        <h3>🚀 2024 – First Semester</h3>
+        <ul>
+          <li>Joined Institute of Technology Gopeshwar (UTU, Chamoli)</li>
+          <li>Learned C programming (basic → advanced)</li>
+          <li>Explored fundamentals of cybersecurity</li>
+          <li>Earned Python Programming Certificate</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>🚀 2024 – Second Semester</h3>
+        <ul>
+          <li>Studied Java fundamentals, wrote first Java programs</li>
+          <li>Practiced core Data Structures (Arrays, Linked Lists, Stacks, Queues, Trees)</li>
+          <li>Completed Cybersecurity Analyst Course (Tata)</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>🚀 Summer Break (After First Year)</h3>
+        <ul>
+          <li>Front-end specialization – Meta Full Stack Developer (Coursera)</li>
+          <li>Mastered HTML, CSS, JavaScript (Advanced)</li>
+          <li>Back-end deep-dive – Board Infinity Program</li>
+          <li>Learned Spring Framework basics</li>
+          <li>Built Projects with Apache Spring Boot</li>
+          <li>Dependency management & builds with Maven</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p>
+      <i>
+        This roadmap maps out how you transformed foundational coursework into hands-on skills,
+        setting the stage for intermediate-level full-stack development. 
+        Next steps: Building a capstone project 🚀, contributing to open-source, 
+        or deploying with Docker & Cloud platforms.
+      </i>
+    </p>
+  </section>
+
+  <!-- Certificates -->
+  <section class="certificates">
+    <h2>📜 Certificates</h2>
+    <ul>
+      <li>
+        Python Programming Certificate
+        <a class="pdf" href="https://drive.google.com/file/d/17eeCr2zgBI4Kjyy0fmRdwRs4vKu1olja/view?usp=sharing" target="_blank">📄 View</a>
+      </li>
+      <li>
+        Cybersecurity Analyst Course – Tata
+        <a class="pdf" href="https://drive.google.com/file/d/1G1G1G1G1G1G1G1G1G1G1G1G1G1G1G1G1/view?usp=sharing" target="_blank">📄 View</a>
+      </li>
+      <li>
+        Meta Full Stack Developer – Coursera
+        <a class="pdf" href="https://drive.google.com/file/d/1H1H1H1H1H1H1H1H1H1H1H1H1H1H1H1H1/view?usp=sharing" target="_blank">📄 View</a>
+      </li>
+      <li>
+        Back-end Development Certificate
+        <a class="pdf" href="https://drive.google.com/file/d/1fAYmyZGosd6wj1oCVg6c7mCpDFHwlqhz/view?usp=sharing" target="_blank">📄 View</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <h3>That's All About My Journey ✨</h3>
+      <ul>
+        <li>👨‍🎓 Student – Institute of Technology Gopeshwar</li>
+        <li>💻 Passionate about Full Stack Development</li>
+        <li>📫 Contact: <a href="mailto:bvivek514@gmail.com">bvivek514@gmail.com</a></li>
+        <li>🌐 Portfolio: <a href="https://www.vivekportfolio.dev" target="_blank">www.vivekportfolio.dev</a></li>
+        <li>📍 Based in Uttarakhand, India</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(99, 99, 215);
+    color: #735DA5 ;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(221, 208, 210);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color:#1995AD;
+    font-size: 2rem;
+}
+main hr{
+    border: 0;
+    background-color:  #F98866;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.my{
+    width: 80%;
+    margin:50px 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.left{
+    font-size: 1rem;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+.firstSection > div{
+    width: 30%;
+    
+}
+.Left{
+    color: aliceblue;
+    font-size: 3rem;
+    margin: 70px 0;
+}
+.Right{
+    color: aliceblue;
+}
+.purple{
+    color: yellow
+}
+#element{
+    color: yellow;
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    color: #F98866;
+    height: 80vh;
+}
+.pro{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F98866;
+
+}
+.pro a{
+    text-decoration: none;
+
+}
+.pro:hover{
+    color:#1995AD;
+    font-size:  2rem;
+}
+.secondsection .box{
+    background-color: white;
+    width: 77vw;
+    height:  2px;
+    margin: 56px 0 ;
+    display: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+.fi{
+    width: 33px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.fi:hover{
+    transform: scale(1.5);
+}
+.P1{
+    position: relative ;
+    top:75px;
+    width: 150px;
+}
+.cal{
+    position: relative;
+    top:86px;
+    width: 150px;
+    font-size: 13px;
+}
+.fi2{
+    width: 33px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.fi2:hover{
+    transform: scale(1.5);
+}
+.P2{
+    position: relative ;
+    top:75px;
+    width: 150px;
+}
+.ON{
+    position: relative;
+    top:86px;
+    width: 150px;
+    font-size: 13px;
+}
+.fi3{
+    width: 33px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.fi3:hover{
+    transform: scale(1.5);
+}
+.P3{
+    position: relative ;
+    top:75px;
+    width: 150px;
+}
+#portfolio-logo{
+    object-fit: cover;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.web{
+    position: relative;
+    top:86px;
+    width: 150px;
+    font-size: 13px;
+
+}
+.fi4{
+    width: 33px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.fi4:hover{
+    transform: scale(1.5);
+
+}
+.P4{
+    position: relative ;
+    top:75px;
+    width: 150px;
+}
+.app{
+    position: relative;
+    top:86px;
+    width: 150px;
+    font-size: 13px;
+}
+footer{
+    background-color:rgb(221, 208, 210) ;
+    height: 100px;
+    justify-content: left;
+}
+.footer{
+   display: flex;
+   margin: 23px 102px;
+   justify-content: space-evenly;
+
+}
+.f2{
+    display: flex;
+
+}
+.f2 ul{
+    list-style: none;
+}
+.footer > div{
+    width: 123px;
+}
+.link a{
+text-decoration: none;
+}
+.link a:hover{
+    text-decoration: none;
+    color:#1995AD;
+    font-size: 1.03rem;
+}
+.In a{
+    text-decoration: none;
+}
+.In a:hover{
+    text-decoration: none;
+    color:#1995AD;
+    font-size: 1.03rem;
+}
+.cv a{
+text-decoration: none;
+
+}
+.cv a:hover{
+    text-decoration: none;
+    color:#1995AD;
+    font-size: 1.03rem;
+}
+.l1{
+    width: 23px;
+}
+.l1:hover{
+    transform: scale(1.5);
+}
+.l2{
+    width: 23px;
+}
+.l2:hover{
+    transform: scale(1.5);
+}
+.l3{
+    width: 23px;
+    margin:1px;
+}
+.l3:hover{
+    transform: scale(1.5);
+}

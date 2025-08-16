@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #1e2024, #232526);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 60px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.left {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffea00;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #ffea00;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #ffea00;
+}
+
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 50px;
+  flex-wrap: wrap;
+}
+
+.firstSection .Left {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  max-width: 500px;
+}
+
+.purple, #element {
+  color: #ffea00;
+  font-weight: 600;
+}
+
+.Rightsection img.my {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.Rightsection img.my:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+main hr {
+  border: none;
+  height: 2px;
+  margin: 50px auto;
+  width: 80%;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+}
+
+.secondsection {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.secondsection h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondsection .box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.vertical {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.vertical:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+}
+
+.vertical img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.vertical img:hover {
+  transform: scale(1.2);
+}
+
+.vertical .P1,
+.vertical .P2,
+.vertical .P3,
+.vertical .P4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffea00;
+}
+
+.vertical .cal,
+.vertical .ON,
+.vertical .web,
+.vertical .app {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.pro {
+  text-decoration: none;
+  color: #ffea00;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.pro:hover {
+  color: #00f2fe;
+  transform: scale(1.1);
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  color: #fff;
+}
+
+footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.footer img:hover {
+  transform: scale(1.3);
+}
+
+.footer a:hover {
+  color: #ffea00;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .firstSection .Left {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .Rightsection img.my {
+    width: 260px;
+    height: 260px;
+  }
+  .secondsection .box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
